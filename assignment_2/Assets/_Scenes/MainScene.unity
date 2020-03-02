@@ -257,7 +257,7 @@ MonoBehaviour:
   prefabEnemies:
   - {fileID: 4189420472905204775, guid: 0cf5cc18c497dd145a860cb552b25347, type: 3}
   - {fileID: 1674154458682843429, guid: a5c36f623c030924bafddcc33c01d61d, type: 3}
-  enemySpawnPerSecond: 2
+  enemySpawnPerSecond: 0.3
   enemyDefaultPadding: 1.5
 --- !u!20 &519420031
 Camera:

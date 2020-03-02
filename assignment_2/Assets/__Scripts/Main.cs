@@ -23,6 +23,7 @@ public class Main : MonoBehaviour
 
     public void SpawnEnemy()
     {
+        // Randomly generate an enemy game object
         int index = Random.Range(0, prefabEnemies.Length);
         GameObject go = Instantiate<GameObject>(prefabEnemies[index]);
 
@@ -41,6 +42,7 @@ public class Main : MonoBehaviour
         pos.y = bndCheck.camHeight + enemyPadding;
         go.transform.position = pos;
 
+        // Recursive strategy to continuously spawn enemies
         Invoke("SpawnEnemy", 1f / enemySpawnPerSecond);
     }
 }
